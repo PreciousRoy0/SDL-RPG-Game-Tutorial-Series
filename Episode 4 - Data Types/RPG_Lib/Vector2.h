@@ -25,14 +25,14 @@ public:
 	template<class T2>
 	bool operator == (const Vector2T<T2> b)
 	{
-		return X == b.X && Y == b.Y && Width == b.Width &&  Height == b.Height;
+		return X == b.X && Y == b.Y;
 	}
 
 	// !=
 	template<class T2>
 	bool operator != (const Vector2T<T2> b)
 	{
-		return  X != b.X && Y != b.Y && Width != b.Width &&  Height != b.Height;
+		return  X != b.X && Y != b.Y;
 	}
 
 	// +
@@ -56,7 +56,7 @@ public:
 	template<class T2>
 	Vector2T operator - (const Vector2T<T2> b)
 	{
-		RectangleT<T2> res = *this;
+		Vector2T<T2> res = *this;
 		res.X -= (T2)X;
 		res.Y -= (T2)Y;
 		return res;
@@ -73,7 +73,7 @@ public:
 	template<class Scalar>
 	Vector2T operator * (const Scalar scalar)
 	{
-		RectangleT<T2> res = *this;
+		Vector2T<Scalar> res = *this;
 		res.X *= scalar;
 		res.Y *= scalar;
 		return res;
@@ -90,7 +90,7 @@ public:
 	template<class Scalar>
 	Vector2T operator / (const Scalar scalar)
 	{
-		RectangleT<T2> res = *this;
+		Vector2T<Scalar> res = *this;
 		res.X /= scalar;
 		res.Y /= scalar;
 		return res;
