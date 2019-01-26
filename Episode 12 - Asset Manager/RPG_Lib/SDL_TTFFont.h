@@ -3,7 +3,7 @@
 #include "SDL_SpriteFont.h"
 #include "IAsset.h"
 
-class SDL_TTFFont: /*public IAsset,*/ public SDL_SpriteFont
+class SDL_TTFFont: public SDL_SpriteFont
 {
 	std::string m_FileName;
 

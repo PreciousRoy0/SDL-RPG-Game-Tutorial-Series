@@ -16,8 +16,8 @@ public:
 	template<class T>
 	bool LoadAsset(std::string assetLocation)
 	{
-		TheAssetTypeFactory::Pointer()->Register<T>(typeid(T).name());
-		IAsset* asset = TheAssetTypeFactory::Pointer()->Create(typeid(T).name());
+		TheAssetFactory::Pointer()->Register<T>(typeid(T).name());
+		IAsset* asset = TheAssetFactory::Pointer()->Create(typeid(T).name());
 
 		bool loaded = asset->Load(assetLocation);
 		if (!loaded)
@@ -25,7 +25,7 @@ public:
 		else
 		{
 			delete asset;
-			printf("LoadAsset: Faild to load asset: %s", assetLocation.c_str());
+			printf("AssetManager:LoadAsset - Failed to load in asset: %s", assetLocation.c_str());
 			return true;
 		}
 
@@ -38,7 +38,7 @@ public:
 		auto a = m_Assets.find(assetLocation);
 		if (a == m_Assets.end())
 		{
-			printf("GetAsset: Faild to find asset: %s", assetLocation.c_str());
+			printf("AssetManager:LoadAsset - Failed to find asset: %s", assetLocation.c_str());
 			return nullptr;
 		}
 		else
@@ -48,12 +48,12 @@ public:
 				return tmp;
 			else
 			{
-				printf("GetAsset: Faild to cast asset to: %s", typeid(T).name()); //had T here
+				printf("AssetManager:LoadAsset - Failed to cast asset to: %s", typeid(T).name());
 				return nullptr;
 			}
 		}
 	}
 };
 
-typedef Singleton<TypeFactory<IAsset>> TheAssetTypeFactory;
+typedef Singleton<TypeFactory<IAsset>> TheAssetFactory;
 typedef Singleton<AssetManager> TheAssetManager;

@@ -2,11 +2,12 @@
 #include <string>
 #include "rapidxml.hpp"
 #include "rapidxml_utils.hpp"
+
 #include "IAsset.h"
 
 using namespace rapidxml;
 
-class XML: public IAsset
+class XML : public IAsset
 {
 protected:
 	file<char>* xmlFile;

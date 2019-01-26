@@ -20,6 +20,7 @@
 
 #include "AssetManager.h"
 
+
 class TestState : public IGameState
 {
 	friend Singleton<TestState>;
@@ -79,13 +80,43 @@ public:
 
 typedef  Singleton<TestState> TheTestState;
 
+class TestType : public IAsset
+{
+	int i = 0;
+
+public:
+
+	virtual bool Load(const std::string & fileName) override
+	{
+		i = 1000;
+		return false;
+	}
+
+};
+
+class TestType2 : public IAsset
+{
+	char i = ' ';
+
+public:
+
+	virtual bool Load(const std::string & fileName) override
+	{
+		i = 'd';
+		return false;
+	}
+
+};
 
 int main(int argc, char* argv[])
 {
-	TheSDLScreenHandeler::Pointer()->Initialize("SDL RPG Game", Size(1024, 768));
-	TheSDLScreenHandeler::Pointer()->SetBackBufferColor(SDL_Color{ 100, 149, 237, 255 });
-	TheSDLGameStateManager::Pointer()->SetState(TheTestState::Pointer());
-	TheSDLGameStateManager::Pointer()->Run();
+	TheAssetManager::Pointer()->LoadAsset<TestType>("Fake");
+	TestType2* tmp = TheAssetManager::Pointer()->GetAsset<TestType2>("Fake");
+
+	//TheSDLScreenHandeler::Pointer()->Initialize("SDL RPG Game", Size(1024, 768));
+	//TheSDLScreenHandeler::Pointer()->SetBackBufferColor(SDL_Color{ 100, 149, 237, 255 });
+	//TheSDLGameStateManager::Pointer()->SetState(TheTestState::Pointer());
+	//TheSDLGameStateManager::Pointer()->Run();
 
 	return 0;
 }

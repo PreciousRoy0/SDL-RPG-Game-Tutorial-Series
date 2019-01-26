@@ -64,9 +64,6 @@
     <Filter Include="Header Files\Asset">
       <UniqueIdentifier>{08befc03-0696-4c23-8e8c-09e03407e8d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\SDL\AssetTypes">
-      <UniqueIdentifier>{e38b889e-1181-4555-8b61-321b713ec81b}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton.h">
@@ -148,16 +145,16 @@
       <Filter>Header Files\Asset</Filter>
     </ClInclude>
     <ClInclude Include="SDL_Image.h">
-      <Filter>Header Files\SDL\AssetTypes</Filter>
+      <Filter>Header Files\SDL</Filter>
     </ClInclude>
     <ClInclude Include="SDL_SpriteFont.h">
-      <Filter>Header Files\SDL\AssetTypes</Filter>
+      <Filter>Header Files\SDL</Filter>
     </ClInclude>
     <ClInclude Include="SDL_SpriteSheet.h">
-      <Filter>Header Files\SDL\AssetTypes</Filter>
+      <Filter>Header Files\SDL</Filter>
     </ClInclude>
     <ClInclude Include="SDL_TTFFont.h">
-      <Filter>Header Files\SDL\AssetTypes</Filter>
+      <Filter>Header Files\SDL</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

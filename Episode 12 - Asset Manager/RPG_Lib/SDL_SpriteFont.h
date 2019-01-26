@@ -4,7 +4,7 @@
 #include "IFont.h"
 #include "XML.h"
 
-class SDL_SpriteFont : public IFont, /*public IAsset,*/ protected SDL_Image
+class SDL_SpriteFont : public IFont, protected SDL_Image
 {
 	XML* m_XMLDocument;
 	std::string m_ImageFile;

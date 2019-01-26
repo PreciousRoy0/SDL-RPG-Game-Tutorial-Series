@@ -1,6 +1,7 @@
 #pragma once
 #include "Singleton.h"
 
+#include <string>
 #include<functional>
 #include <map>
 
@@ -16,23 +17,23 @@ public:
 	template<class T>
 	void Register(std::string key)
 	{
-		m_Objects.insert(std::pair <std::string, std::function<Type*(void)>>(key, []()->Type*
+		m_Objects.insert(std::pair<std::string, std::function<Type*(void)>>(key,
+		[]()->Type*
 		{
-			T* temp = new T();
-			return temp;
+			T* tmp = new T;
+			return tmp;
 		}));
 	}
 
 	Type* Create(std::string key)
 	{
 		auto a = m_Objects.find(key);
-		if (a == m_Objects.end()) //had i here
+		if (a != m_Objects.end())
+			return a->second();
+		else
 		{
-			printf("Type was not registered: %s", key.c_str());
+			printf("TypeFactory:Create - Type was not registered: %s", key.c_str());
 			throw "Type was not registered";
 		}
-		else
-			return a->second();
 	}
-
 };

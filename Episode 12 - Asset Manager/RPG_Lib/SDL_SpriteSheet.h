@@ -7,7 +7,7 @@
 //#include <SDL.h>
 struct SDL_Rect;
 
-class SDL_SpriteSheet : /*public IAsset,*/ public SDL_Image
+class SDL_SpriteSheet : public SDL_Image
 {
 	Size m_CellSize;
 
