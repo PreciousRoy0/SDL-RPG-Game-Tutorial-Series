@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Singleton">
+      <UniqueIdentifier>{7231d9d2-65a4-4351-b349-715ba1424f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\State">
+      <UniqueIdentifier>{3cd228a2-5fbd-4ac9-ac92-27a778c441d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\State">
+      <UniqueIdentifier>{fa65c3b9-f692-4240-899a-ec681c78a810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataTypes">
+      <UniqueIdentifier>{40baf000-25cb-4192-8ae2-c9df13f3ebd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDL">
+      <UniqueIdentifier>{af4ea6c5-b137-4b52-8cf0-92439e1b34c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDL">
+      <UniqueIdentifier>{c66ca8fc-2334-4fdb-8ca0-49b93da8f467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{0006bbcd-a2f6-4629-b142-e242b0f6e2a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input\Keyboard">
+      <UniqueIdentifier>{16640978-c7a6-4dfe-88d1-1edc158a9140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input\Mouse">
+      <UniqueIdentifier>{1c3ee9f0-92ee-48e3-9dcc-4f0d47b0b50f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{80889596-67a9-420b-ae08-1f03defbe54c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input\Keyboard">
+      <UniqueIdentifier>{d337ad23-2e9e-4e3e-b601-965921074964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input\Mouse">
+      <UniqueIdentifier>{1e232b8f-9d26-4957-8390-13d2510d1a29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{854c97a2-3dca-4cf5-bffe-93bec93339c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO\XML">
+      <UniqueIdentifier>{cbe597f1-e195-4e5b-b6ae-79867ebfd1c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{e63e35e0-0856-4333-89f0-7e53654360ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\XML">
+      <UniqueIdentifier>{352607c0-55d1-49f9-9fb5-1e9be4fc06a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Asset">
+      <UniqueIdentifier>{08befc03-0696-4c23-8e8c-09e03407e8d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{6e86364b-aa9b-4632-83ed-6ae8516d305b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{f0fc7e59-045e-4c4e-aea4-26abc676566e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Event">
+      <UniqueIdentifier>{ef9dfaf9-5557-4875-82f4-1805856e24d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Event">
+      <UniqueIdentifier>{7ca6d098-0f39-4023-ac23-c38931c0bd1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Text">
+      <UniqueIdentifier>{0f9c8313-ac59-465a-b1e9-fba4ff39c4a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Event\Events">
+      <UniqueIdentifier>{4c142679-a76a-47f1-a174-143327c751b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataTypes">
+      <UniqueIdentifier>{1b3bca13-3ce9-48ea-9c72-c602d16731dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Controls">
+      <UniqueIdentifier>{b80a8774-822e-41ee-85b1-6ba7da643cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Controls">
+      <UniqueIdentifier>{709f926c-65a4-4345-b302-1aad2527f855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDL\Font">
+      <UniqueIdentifier>{ec05c0fb-2d38-42fe-8ca1-7cc395d52743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDL\Sprites">
+      <UniqueIdentifier>{4288e085-2f4d-424b-8f14-e75725c359f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDL\Font">
+      <UniqueIdentifier>{60b70666-79d8-4bb9-a94d-8d25451abde6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDL\Sprites">
+      <UniqueIdentifier>{f4eac745-5abf-409c-80e4-ee52acb0c4cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Singleton.h">
+      <Filter>Header Files\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="UnCopyable.h">
+      <Filter>Header Files\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameState.h">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameStateManager.h">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateManager.h">
+      <Filter>Header Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle2D.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Size.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_ScreenHandeler.h">
+      <Filter>Header Files\SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_GameStateManager.h">
+      <Filter>Header Files\SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_EventHandeler.h">
+      <Filter>Header Files\SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardState.h">
+      <Filter>Header Files\Input\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Header Files\Input\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyState.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Header Files\Input\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseState.h">
+      <Filter>Header Files\Input\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="XML.h">
+      <Filter>Header Files\IO\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml.hpp">
+      <Filter>Header Files\IO\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_iterators.hpp">
+      <Filter>Header Files\IO\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_print.hpp">
+      <Filter>Header Files\IO\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_utils.hpp">
+      <Filter>Header Files\IO\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="IAsset.h">
+      <Filter>Header Files\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>Header Files\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeFactory.h">
+      <Filter>Header Files\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="IFont.h">
+      <Filter>Header Files\UI\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="EventListener.h">
+      <Filter>Header Files\UI\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="EventPoller.h">
+      <Filter>Header Files\UI\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="IEvent.h">
+      <Filter>Header Files\UI\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="IUIControl.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIParameters.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Time.h">
+      <Filter>Header Files\SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="MousEvent.h">
+      <Filter>Header Files\UI\Event\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Lable.h">
+      <Filter>Header Files\UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_SpriteFont.h">
+      <Filter>Header Files\SDL\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_TTFFont.h">
+      <Filter>Header Files\SDL\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Image.h">
+      <Filter>Header Files\SDL\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_SpriteSheet.h">
+      <Filter>Header Files\SDL\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_TileSheet.h">
+      <Filter>Header Files\SDL\Sprites</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameStateManager.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_ScreenHandeler.cpp">
+      <Filter>Source Files\SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_GameStateManager.cpp">
+      <Filter>Source Files\SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_EventHandeler.cpp">
+      <Filter>Source Files\SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Timer.cpp">
+      <Filter>Source Files\SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardState.cpp">
+      <Filter>Source Files\Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Source Files\Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Source Files\Input\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="XML.cpp">
+      <Filter>Source Files\IO\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="EventPoller.cpp">
+      <Filter>Source Files\UI\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="EventListener.cpp">
+      <Filter>Source Files\UI\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Source Files\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Time.cpp">
+      <Filter>Source Files\SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="IUIControl.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui_Label.cpp">
+      <Filter>Source Files\UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_TTFFont.cpp">
+      <Filter>Source Files\SDL\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_SpriteFont.cpp">
+      <Filter>Source Files\SDL\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Image.cpp">
+      <Filter>Source Files\SDL\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_SpriteSheet.cpp">
+      <Filter>Source Files\SDL\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_TileSheet.cpp">
+      <Filter>Source Files\SDL\Sprites</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
